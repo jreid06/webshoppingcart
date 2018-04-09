@@ -105,7 +105,7 @@ $(document).ready(function(){
                 links: [
                     {
                         title: 'home',
-                        href: 'webshoppingcart/',
+                        href: 'index.html',
                         active: true,
                         styles:{
                             paddingLeft: "10px",
@@ -114,7 +114,7 @@ $(document).ready(function(){
                     },
                     {
                         title: 'all products',
-                        href: 'webshoppingcart/all-products.html',
+                        href: 'all-products.html',
                         active: false,
                         styles:{
                             paddingLeft: "10px",
@@ -124,7 +124,7 @@ $(document).ready(function(){
                     {
                         title: 'basket',
                         icon: 'shopping_basket',
-                        href: 'webshoppingcart/basket.html',
+                        href: 'basket.html',
                         active: false,
                         styles:{
                             paddingLeft: "15px"
