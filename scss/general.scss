@@ -1,0 +1,41 @@
+// media queries
+// Media Query Breakpoints
+$xs: 0;
+$xs-large-break: '(min-width: 360px)';
+$sm-small-break: '(min-width: 568px)';
+$sm-break: '(min-width: 576px)';
+$md-break: '(min-width: 768px)';
+$md-break-plus: '(min-width: 850px)';
+$lg-break: '(min-width: 992px)';
+$xl-break: '(min-width: 1200px)';
+$xll-break: '(min-width: 1400px)';
+$sm-break-max: '(max-width: 576px)';
+$md-break-max: '(max-width: 767px)';
+$lg-break-max: '(max-width: 991px)';
+$xl-break-max: '(max-width: 1199px)';
+$largephones: '(min-width: 400px)';
+
+@mixin respond-to($media) {
+	 @media only screen and #{$media}{
+		@content;
+	}
+}
+
+html,body{
+    height:100%;
+}
+
+.btn-primary{
+    background-color: transparent;
+    -webkit-box-shadow: 0 0 10px #f2f2f2;
+            box-shadow: 0 0 10px #f2f2f2;
+    border: 1px solid darken(grey, 2%);
+    font-weight: 400;
+    text-shadow: 1px 2px #222;
+    text-transform: uppercase;
+
+    &:hover{
+        background-color: #222;
+        border: 1px solid darken(grey, 2%);
+    }
+}

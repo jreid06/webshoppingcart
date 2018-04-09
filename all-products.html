@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shopping cart</title>
+
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+
+    <div id="home">
+        <div class="loader">
+            <div class="loader-icon">
+
+            </div>
+        </div>
+
+        <template v-if="loaded">
+            <nav-main :basketdata="basket.items"></nav-main>
+            <div class="container-fluid mainbody-products">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <br>
+                        <h2>Browse All Products</h2>
+                        <br>
+                        <div class="alert alert-info fixed-top basket-alert" role="alert">
+                          Your current basket sub total is: <span class="font-weight-bold">£ {{basket.sub_total.toFixed(2)}}</span> &nbsp;&nbsp;<span class="badge badge-success" v-if="basket.items.length > 3">Eligible for 19% discount</span> <a href="basket.html" class="text-success">View Basket</a>
+                        </div>
+                        <p></p>
+                        <br>
+                    </div>
+
+                    <product-card v-for="(product, index) in products"
+                                    :key="product.id"
+                                    :addicon="'shopping_basket'"
+                                    :product="product"
+                                    :count="index">
+
+                    </product-card>
+
+                </div>
+            </div>
+        </template>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script src="js/classes.js" charset="utf-8"></script>
+    <script src="js/filters.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+</body>
+
+</html>

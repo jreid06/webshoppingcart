@@ -1,0 +1,175 @@
+[{
+        "name": "Fifa 18",
+        "genre": "sports",
+        "type": "game",
+        "platforms": {
+            "playstation4": true,
+            "xboxone": true,
+            "nintendo_switch": true,
+            "pc": true
+        },
+        "pegi": "3",
+        "description": "Powered by Frostbite, EA SPORTS FIFA 18 blurs the line between the virtual and real worlds, bringing to life the players, teams, and atmospheres that immerse you in the emotion of The World’s Game. The biggest step in gameplay innovation in franchise history, FIFA 18 introduces Real Player Motion Technology, an all-new animation system which unlocks a new level of responsiveness, and player personality – now Cristiano Ronaldo and other top players feel and move exactly like they do on the real pitch.",
+        "id": "PROD_213602d19c",
+        "sku": "SKU_9ca95cebc7",
+        "main_image": "https://img.game.co.uk/ml2/6/9/4/2/694259_ps4_b.png",
+        "images": ["https://img.game.co.uk/ml2/6/9/4/2/694259_scr1_a.png", "https://img.game.co.uk/ml2/6/9/4/2/694259_scr2_a.png", "https://img.game.co.uk/ml2/6/9/4/2/694259_scr3_a.png"],
+        "price": 29.99,
+        "add_ons": true,
+        "extras": {
+            "packages": [{
+                    "name": "coin boost",
+                    "value": 1000,
+                    "redeem_count": 1,
+                    "quantity": 0,
+                    "price": 2.99
+                },
+                {
+                    "name": "gold packs",
+                    "value": 10,
+                    "redeem_count": 1,
+                    "quantity": 0,
+                    "price": 4.99
+                }
+            ]
+        }
+    },
+    {
+        "name": "Call of Duty: WWII",
+        "genre": "shooter",
+        "type": "game",
+        "platforms": {
+            "playstation4": true,
+            "xboxone": true,
+            "nintendo_switch": false,
+            "pc": true
+        },
+        "pegi": "18",
+        "description": "Call of Duty® returns to its roots with Call of Duty®: WWII - an experience that redefines World War II for a new gaming generation. Call of Duty®: WWII tells the story of heroism on a global scale, through the unbreakable brotherhood of common men fighting to preserve freedom in a world on the brink of tyranny.",
+        "id": "PROD_290435eaf1",
+        "sku": "SKU_02aa7241de",
+        "main_image": "https://img.game.co.uk/ml2/6/9/2/1/692193_ps4_b.png",
+        "images": ["https://img.game.co.uk/ml2/6/9/2/1/692193_scr1_a.png", "https://img.game.co.uk/ml2/6/9/2/1/692193_scr2_a.png", "https://img.game.co.uk/ml2/6/9/2/1/692193_scr3_a.png"],
+        "price": 34.99,
+        "add_ons": true,
+        "extras": {
+            "packages": [{
+                    "name": "maps pack april",
+                    "description": "recieve the most recent maps for online game modes",
+                    "value": 4,
+                    "redeem_count": 1,
+                    "quantity": 0,
+                    "price": 2.99
+                },
+                {
+                    "name": "war captain",
+                    "description": "unlock the war captain character for use in zombies game mode",
+                    "value": 1,
+                    "redeem_count": 1,
+                    "quantity": 0,
+                    "price": 3.99
+                }
+            ]
+        }
+    },
+    {
+        "name": "Crash Bandicoot N. Sane Trilogy",
+        "genre": "action/adventure",
+        "type": "game",
+        "platforms": {
+            "playstation4": true,
+            "xboxone": true,
+            "nintendo_switch": false,
+            "pc": false
+        },
+        "pegi": "7",
+        "description": "He’s returned and Crash Bandicoot has been remastered. The three classic titles make a return to PlayStation 4 with a whole new look. The much-loved gameplay remains the same with Crash completing challenges to collect the gems. Take a trip down memory-lane as you make your way through the adventures all on Crash Bandicoot N.Sane Trilogy. This collection includes Crash Bandicoot, Crash Bandicoot 2 Cortex Strikes Back and Crash Bandicoot Warped.The remastered games pack the same amount of fun but in striking HD glory!Help Crash Bandicoot jump, spin and wump his way to defeating Dr.Neo Cortex. Buy Crash Bandicoot N.Sane Trilogy on PlayStation 4 today and prepare for an enchanting adventure with your favourite marsupial.",
+        "id": "PROD_04cd8dbb67",
+        "sku": "SKU_80ba9137a7",
+        "main_image": "https://img.game.co.uk/ml2/5/6/2/9/562924_ps4_b.png",
+        "images": ["https://img.game.co.uk/ml2/5/6/2/9/562924_scr1_a.png", "https://img.game.co.uk/ml2/5/6/2/9/562924_scr2_a.png", "https://img.game.co.uk/ml2/5/6/2/9/562924_scr3_a.png"],
+        "price": 24.99,
+        "add_ons": false,
+        "extras": {
+            "packages": []
+        }
+    },
+    {
+        "name": "Mario Kart 8 Deluxe",
+        "genre": "Racing",
+        "type": "game",
+        "platforms": {
+            "playstation4": false,
+            "xboxone": false,
+            "nintendo_switch": true,
+            "pc": false
+        },
+        "pegi": "3",
+        "description": "Mario Kart 8 Deluxe for Nintendo Switch, fans can enjoy the definitive version of Mario Kart 8 anywhere, anytime- even with up to 8 friends! Bursting with new modes, characters, karts and fan favourite tracks, it 's time to start your engines in 3, 2, 1.......",
+        "id": "PROD_d638e2fce5",
+        "sku": "SKU_33155f6644",
+        "main_image": "https://img.game.co.uk/ml2/6/5/5/8/655846_gen_b.png",
+        "images": ["https://img.game.co.uk/ml2/6/5/5/8/655846_scr1_a.png", "https://img.game.co.uk/ml2/6/5/5/8/655846_scr2_a.png", "https://img.game.co.uk/ml2/6/5/5/8/655846_scr3_a.png"],
+        "price": 41.99,
+        "add_ons": true,
+        "extras": {
+            "packages": [{
+                "name": "secret character",
+                "description": "unlock the secret racing character who has special racing abilities",
+                "value": "1",
+                "redeem_count": "1",
+                "price": "5.99"
+            }]
+        }
+    },
+    {
+        "name": "Football Manager 2018",
+        "genre": "sports",
+        "type": "game",
+        "platforms": {
+            "playstation4": false,
+            "xboxone": false,
+            "nintendo_switch": false,
+            "pc": true
+        },
+        "pegi": "3",
+        "description": "Fast-track your way to footballing history with the Football Manager 2018 Limited Edition. A double-sided “Management Masterclass” pull-out races you through your first steps in the digital dugout and gears you up for long-term success, helping you transform your team from contenders to champions and elevating you to managerial icon. Football Manager 2018 achieves an interactive reality in depth, emotion and control like never before, taking you places only accessible in the completely immersive game world. Quite simply, it’s the closest thing to doing the job for real. Get it right and you’ll be the star of the show, grabbing the newspaper headlines and dominating trends on social media. They’ll write your name in footballing folklore…if you succeed, of course. ",
+        "id": "PROD_421b96c915",
+        "sku": "SKU_39980d7177",
+        "main_image": "https://img.game.co.uk/ml2/7/2/2/9/722944_pcw_b.png",
+        "images": ["http://d1rux6lfg1plv3.cloudfront.net/styles/2018_touch/s3/footballmanager/2018/game_information_features/team_report.jpg?itok=dIBldI1v", "http://d1rux6lfg1plv3.cloudfront.net/styles/2018_touch/s3/footballmanager/2018/game_information_features/tactics_1.jpg?itok=WuCLtQw3", "http://d1rux6lfg1plv3.cloudfront.net/styles/2018_touch/s3/footballmanager/2018/game_information_features/matchday_live_4_3.jpg?itok=00VjCoGf"],
+        "price": 44.99,
+        "add_ons": true,
+        "extras": {
+            "packages": [{
+                "name": "coin boost",
+                "value": "1000",
+                "redeem_count": "1",
+                "quantity": "0",
+                "price": "2.99"
+            }]
+        }
+    },
+    {
+        "name": "Assassin's Creed: Origins",
+        "genre": "action/adventure",
+        "type": "game",
+        "platforms": {
+            "playstation4": true,
+            "xboxone": true,
+            "nintendo_switch": false,
+            "pc": true
+        },
+        "pegi": "3",
+        "description": "Set in mysterious Ancient Egypt, Assassin’ s Creed® Origins is a new beginning.Experience a new way to fight while exploring the great pyramids and hidden tombs across the country of Ancient Egypt.Live emotional and memorable adventures along your journey and discover the origin story of the Assassin’ s Brotherhood.",
+        "id": "PROD_415602t11c",
+        "sku": "SKU_9ca95cebc7",
+        "main_image": "https://img.game.co.uk/ml2/6/9/5/4/695486_xb1_b.png",
+        "images": ["https://img.game.co.uk/ml2/6/9/5/4/695486_scr1_a.png", "https://img.game.co.uk/ml2/6/9/5/4/695486_scr2_a.png", "https://img.game.co.uk/ml2/6/9/5/4/695486_scr3_a.png"],
+        "price": 32.99,
+        "add_ons": false,
+        "extras": {
+            "packages": []
+        }
+    }
+]
