@@ -192,7 +192,7 @@ $(document).ready(function(){
                     let n = Math.floor(temp_discount_total.toFixed(2).split('.').join('')),
                         discount_total = n / 100;
 
-                    console.log(typeof discount_total);
+                    // console.log(typeof discount_total);
                     vm.basket.discounted_total = discount_total;
                 }
 
@@ -232,7 +232,7 @@ $(document).ready(function(){
             },
             getProducts: function(){
                 let vm = this;
-                console.log('GET PRODUCTS AJAX');
+                // console.log('GET PRODUCTS AJAX');
                 $.getJSON('products/catalogue.json', function(response){
                     for (var i = 0; i < response.length; i++) {
                         let product = new Product(response[i].id, response[i].name, response[i].genre, response[i].platforms, response[i].price, response[i].description, response[i].pegi, response[i].main_image, response[i].images, response[i].add_ons, response[i].extras);
@@ -268,7 +268,7 @@ $(document).ready(function(){
                     let basket_items = JSON.parse(sessionStorage.getItem('GAMEHUB_basket'));
                     vm.addBasketData(basket_items);
                 }else {
-                    console.log('NO BASKET SESSION EXISTS');
+                    // console.log('NO BASKET SESSION EXISTS');
                 }
 
                 setTimeout(function(){
@@ -278,33 +278,8 @@ $(document).ready(function(){
         },
         mounted: function(){
             let vm = this;
-
-            console.log('MOUNTED');
             vm.getBasketData();
-            // setTimeout(function(){
-            //     vm.loaded = true;
-            // }, 600);
             vm.getProducts();
-
-            switch (vm.pathname) {
-                case '/':
-
-                    break;
-                case '/all-products.html':
-
-
-                    // vm.getBasketData();
-
-                    break;
-                case '/basket.html':
-
-                    // load basket if data exists in session storage or load empty basket section
-                    // vm.getBasketData();
-
-                    break;
-                default:
-
-            }
 
         }
 
