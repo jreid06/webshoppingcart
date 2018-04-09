@@ -143,7 +143,7 @@ $(document).ready(function(){
                 required: true
             }
         },
-        template:'<nav class="navbar navbar-expand-md navbar-light fixed-top"> <a class="navbar-brand" href="/"><i class="material-icons">shop</i></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav" :style="stylesObj"> <li v-for="(nav, index) in links" class="nav-item" :class="{active: nav.active}" :style="nav.styles"> <a class="nav-link" :href="nav.href"> <template v-if="nav.icon"> <material-icon :icon="nav.icon"></material-icon> {{basketdata.length}} </template> <template v-else> {{nav.title | capitalize}} </template></a> </li> </ul> </div> </nav>'
+        template:'<nav class="navbar navbar-expand-md navbar-light fixed-top"> <a class="navbar-brand" href="index.html"><i class="material-icons">shop</i></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav" :style="stylesObj"> <li v-for="(nav, index) in links" class="nav-item" :class="{active: nav.active}" :style="nav.styles"> <a class="nav-link" :href="nav.href"> <template v-if="nav.icon"> <material-icon :icon="nav.icon"></material-icon> {{basketdata.length}} </template> <template v-else> {{nav.title | capitalize}} </template></a> </li> </ul> </div> </nav>'
     })
 
     let main_vue = new Vue({
@@ -232,6 +232,7 @@ $(document).ready(function(){
             },
             getProducts: function(){
                 let vm = this;
+                console.log('GET PRODUCTS AJAX');
                 $.getJSON('products/catalogue.json', function(response){
                     for (var i = 0; i < response.length; i++) {
                         let product = new Product(response[i].id, response[i].name, response[i].genre, response[i].platforms, response[i].price, response[i].description, response[i].pegi, response[i].main_image, response[i].images, response[i].add_ons, response[i].extras);
@@ -277,17 +278,21 @@ $(document).ready(function(){
         },
         mounted: function(){
             let vm = this;
+
+            console.log('MOUNTED');
             vm.getBasketData();
+            // setTimeout(function(){
+            //     vm.loaded = true;
+            // }, 600);
+            vm.getProducts();
 
             switch (vm.pathname) {
                 case '/':
-                    setTimeout(function(){
-                        vm.loaded = true;
-                    }, 600);
+
                     break;
                 case '/all-products.html':
 
-                    vm.getProducts();
+
                     // vm.getBasketData();
 
                     break;
