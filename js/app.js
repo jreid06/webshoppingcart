@@ -232,7 +232,7 @@ $(document).ready(function(){
             },
             getProducts: function(){
                 let vm = this;
-                $.getJSON('webshoppingcart/products/catalogue.json', function(response){
+                $.getJSON('products/catalogue.json', function(response){
                     for (var i = 0; i < response.length; i++) {
                         let product = new Product(response[i].id, response[i].name, response[i].genre, response[i].platforms, response[i].price, response[i].description, response[i].pegi, response[i].main_image, response[i].images, response[i].add_ons, response[i].extras);
 
