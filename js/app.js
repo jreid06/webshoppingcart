@@ -105,7 +105,7 @@ $(document).ready(function(){
                 links: [
                     {
                         title: 'home',
-                        href: '/',
+                        href: 'webshoppingcart/',
                         active: true,
                         styles:{
                             paddingLeft: "10px",
@@ -114,7 +114,7 @@ $(document).ready(function(){
                     },
                     {
                         title: 'all products',
-                        href: '/all-products.html',
+                        href: 'webshoppingcart/all-products.html',
                         active: false,
                         styles:{
                             paddingLeft: "10px",
@@ -124,7 +124,7 @@ $(document).ready(function(){
                     {
                         title: 'basket',
                         icon: 'shopping_basket',
-                        href: '/basket.html',
+                        href: 'webshoppingcart/basket.html',
                         active: false,
                         styles:{
                             paddingLeft: "15px"
@@ -232,7 +232,7 @@ $(document).ready(function(){
             },
             getProducts: function(){
                 let vm = this;
-                $.getJSON('/products/catalogue.json', function(response){
+                $.getJSON('webshoppingcart/products/catalogue.json', function(response){
                     for (var i = 0; i < response.length; i++) {
                         let product = new Product(response[i].id, response[i].name, response[i].genre, response[i].platforms, response[i].price, response[i].description, response[i].pegi, response[i].main_image, response[i].images, response[i].add_ons, response[i].extras);
 
